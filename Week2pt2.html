@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html> 
 <head>
-	<title>My Second Page</title>
+	<title>My Test Page</title>
 
 </head>
 <body>
-	<h1>Hello Welcome to my page</h1>
-	<table>
+	<h1 style="color:blue;">Hello Welcome to my page</h1>
+	<p>My test page below will contain a table and a dropdown list and lastly a photo from the web</p>
+	<!-- This is my exercise table-->
+	<table border="2" style="border:solid;">
 		<tr>
 			<td>Day1</td><td>Walking</td><td>30 minutes</td>
 		</tr>
@@ -17,4 +19,17 @@
 			<td>Day3</td><td>Resting</td><td>500 minutes</td>
 		</tr>
 	</table>
+
+	<form action="action_page.php">
+		<select name="cars">
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="toyota">Toyota</option>
+			<option value="hyundai">Hyundai</option>
+		</select>
+		<br>
+		<input type="submit">
+	</form>
+	<br>
+	<img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/ff/4584404c7511e7a18adb2a6ad3c009/GettyImages-185239648.jpg?auto=format&dpr=1&w=100&h=100&fit=clamp">
 </body>
