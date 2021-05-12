@@ -8,13 +8,23 @@
 			alert("Nice to Meet You!")
 		}
 		function hello() {
-			var inputname = document.('')
+			var inputname = document.getElementById('name').value;
+			if (inputname.length==0)
+			{
+				alert("you have entered an empty string, pls try again.");
+			}
+			else
+			{
+				document.getElementById("message").innerHTML="Hello " + inputname + "!"; 
+			}
 		}
 	</script>
+	<h1>Hi there!</h1>
 </head>
-<body>
-	<p onload="alertwhenloaded()"></p>
+<body onload="alertwhenloaded()">
 	<input type="text" id="name">
 	<button onclick="hello()">Submit</button>
+	<br>
+	<span id="message"></span>
 </body>
 </html>
