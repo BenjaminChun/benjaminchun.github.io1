@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>My Test Page</title>
+	<!-- This is my first JS function: take note that there are semicolons-->
+	<script type="text/javascript">
+		function addParagraphText()
+		{
+			document.getElementById("para").innerHTML="Thanks for adding text!"; 
+		}
+		function check_name()
+		{
+			var testinput = document.getElementById("name").value;
+			if (testinput.length==0)
+			{
+				document.getElementById("para").innerHTML = "Hey, you didnt type anything!";
+			}
+			else
+				document.getElementById("para").innerHTML = testinput;
+		}
+	</script>
+	<script>
+		function myAlertMath()
+		{
+			var userNumber=document.getElementById("mathinput").value;\
+			//how to make an alert
+			alert("Your number x 5 is "+ userNumber * 5);
+		}
+		//how to make a prompt
+		function myPrompt()
+		{
+			var person = prompt("Please enter your name","Fred"); //second string optional
+			if (person!="")
+			{
+				document.getElementById("hello").innerHTML = "Hello " + person +"! How are you doing?";
+			}
+			else
+				myPrompt();
+		}
+		function checkfield(idx)
+		{
+			if (getElementById(idx).value=="")
+			{
+				document.getElementById(message1).innerHTML = "too short!";
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1 style="color:blue;">Hi welcome!</h1>
+	<p style="font-size: 200%;">Here is a button</p>
+	<button onclick="addParagraphText();">Click Me</button>
+	<br>
+	<input type="text" name="idk", id="name" onblur="checkfield(name)">
+	<p id="message1"></p>
+	<input type="text" id="zzz">
+	<button onclick="check_name();">Submit to Check</button>
+	<p id="para"></p>
+	<br>
+	<button onclick="alert('The Test Worked');">Alert Test</button>
+	<input id="mathinput" type="number"/> <!-- allows the restriction of numbers only-->
+	<button onclick="myAlertMath()">Multiply x 5</button>
+	<p id="test"></p>
+	<br>
+	<button onclick="myPrompt()">Click Me!</button>
+	<p id="hello"></p>
+</body>
+</html>
