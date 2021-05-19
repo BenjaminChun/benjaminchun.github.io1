@@ -5,6 +5,20 @@
 	<h1>Please fill in the fields below</h1>
 </head>
 <body>
+	<script type="text/javascript">
+		function validatepw()
+		{
+			var temp = document.getElementById("password").;
+			if (temp.length==0)
+			{
+				prompt("Please enter your name","Fred");
+			}
+			else
+			{
+				prompt("Please enter your name","Fred");
+			}
+		}
+	</script>
 	<form>
 		<strong>First Name:</strong><br>
 		<input type="text" name="firstname"><br>
@@ -14,7 +28,7 @@
 		<input type="date" name="dob"><br>
 		<br>
 		<strong>Password:</strong>
-		<input type="password" name="password" onblur="validatepw()><br>
+		<input type="password" name="password" onblur="validatepw()"><br>
 		<strong>Confirm Password:</strong>
 		<input type="password" name="password2"><br>
 	</form>
