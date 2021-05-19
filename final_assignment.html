@@ -1,24 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style type="text/css">
+		body
+		{
+			background-color: lightblue;		  
+		}
+
+		h1 {
+			color: navy;
+			margin-left: 0px;
+		}
+		div {
+			  width: 100%;
+			  height: 400px;
+			  
+			  background-repeat: no-repeat;
+			  background-size: contain;
+			  border: 1px solid red;
+		}
+		form{
+			margin-left: 10px;
+		}
+	</style>
 	<title>Create an Account</title>
 	<h1>Please fill in the fields below</h1>
-</head>
-<body>
+	<img src="data:image/jpeg;base64,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">
 	<script type="text/javascript">
+		//Javascript component
 		function validatepw()
 		{
-			var temp = document.getElementById("password").;
-			if (temp.length==0)
+			var temp = document.getElementById("pw").value;
+			if (temp.length <= 5)
 			{
-				prompt("Please enter your name","Fred");
+				alert("Sorry your password is too short, please try again")
 			}
-			else
+			else if (temp == temp.toLowerCase())
 			{
-				prompt("Please enter your name","Fred");
+				alert("Sorry your password has NO UPPERCASE CHARACTERS, please try again")
+			}
+			else if (temp == temp.toUpperCase())
+			{
+				alert("Sorry your password has NO LOWERCASE CHARACTERS, please try again")
+			}
+		}
+		function confirmpw()
+		{
+			var temp2 = document.getElementById("pw2").value;
+			var temp = document.getElementById("pw").value;
+			if (temp2.length==0)
+			{
+
+			}
+			else if (temp!=temp2)
+			{
+				alert("Passwords do not match!")
 			}
 		}
 	</script>
+</head>
+<body>
+	
 	<form>
 		<strong>First Name:</strong><br>
 		<input type="text" name="firstname"><br>
@@ -28,9 +70,12 @@
 		<input type="date" name="dob"><br>
 		<br>
 		<strong>Password:</strong>
-		<input type="password" name="password" onblur="validatepw()"><br>
+		<input type="password" name="password" id="pw" onblur="validatepw()">
+		<i>Password should be 6 characters long and contain both upper and lowercase characters</i><br>
 		<strong>Confirm Password:</strong>
-		<input type="password" name="password2"><br>
+		<input type="password" name="password2" id="pw2" onblur="confirmpw()"><br>
+		<strong>Phone number:</strong>
+		<input type="number" name="ccode" id="ccode" placeholder="Country Code"><input type="number" name="pnum" id="pnum" placeholder="Phone Number"><br>
 	</form>
 </body>
 </html>
