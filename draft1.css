@@ -28,7 +28,7 @@
 
   /* Third image (Contact) */
   .bgimg-3 {
-    background-image: url("/w3images/parallax3.jpg");
+    background-image: url('https://static01.nyt.com/images/2021/01/17/multimedia/15aroundtheworld-singapore15/15aroundtheworld-singapore15-superJumbo.jpg');
     min-height: 400px;
   }
 
