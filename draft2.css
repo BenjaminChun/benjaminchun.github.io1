@@ -1,6 +1,6 @@
-head{
-
-}
-body{
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+.leftside{
+	justify-content: space-between;
+	display: flex;
 	
 }
