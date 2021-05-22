@@ -1,22 +1,4 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-.navbar{
+.nav-wrapper {
 	display: flex;
-	justify-content: space-between;	
-	padding: 10px;
-	text-transform: uppercase;
-}
-.leftside .rightside {
-	height: 22px;
-	border-bottom: 1px solid transparent;
-	transition: border-bottom 0.5s;
-	color: #8a8a8a;
-	text-decoration: none;
-	transition: color 0.5s;
-}
-
-.leftside:hover{
-	border-bottom: 1px solid black;
-}
-.rightside:hover{
-	border-bottom: 1px solid black;
+	justify-content: space-between;
 }
