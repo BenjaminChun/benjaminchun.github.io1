@@ -1,7 +1,10 @@
+/*Master*/
 body {
 	margin: 0px;
 }
 
+
+/*NavBar*/
 .container {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -36,3 +39,5 @@ body {
 .nav-link-wrapper a : hover {
 	color: black;
 }
+
+/*Portfolio*/
