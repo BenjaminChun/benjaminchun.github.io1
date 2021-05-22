@@ -1,4 +1,12 @@
 .nav-wrapper {
 	display: flex;
 	justify-content: space-between;
+	padding: 38px;
+}
+.leftside {
+	display: flex;
+}
+.nav-wrapper > .leftside > div {
+	margin-right: 20px;
+	font-size: 0.9em;
 }
