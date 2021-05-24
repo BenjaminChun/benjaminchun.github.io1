@@ -17,9 +17,7 @@ body {
 .leftside {
 	display: flex;
 }
-.rightside {
-	display: flex;
-}
+
 .nav-wrapper > .leftside > div {
 	margin-right: 20px;
 	font-size: 0.9em;
