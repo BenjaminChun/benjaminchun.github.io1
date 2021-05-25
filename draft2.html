@@ -3,7 +3,19 @@
 <head>
 	<title>Benjamin's Website</title>
 	<link rel="stylesheet" type="text/css" href="draft2.css">
-	<script type="text/javascript" src="draft2.js"></script>
+	<script>
+		const portfolioitems = document.querySelectorAll('.portfolio-item-wrapper');
+portfolioitems.forEach(portfolioitem =>{
+	portfolioitem.addEventListener('mouseover',()=>{
+		console.log(portfolioitem.childNodes[1].classList);
+		portfolioitem.childNodes[1].classList.add('img-darken');
+	})
+	portfolioitem.addEventListener('mouseout',()=>{
+		console.log(portfolioitem.childNodes[1].classList);
+		portfolioitem.childNodes[1].classList.remove('img-darken');
+	})
+})
+	</script>
 </head>
 <body>
 	<div class="container">
