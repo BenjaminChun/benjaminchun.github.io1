@@ -86,6 +86,17 @@ body {
 	filter: brightness(10%);
 }
 
+/*about pg*/
 .two-column-wrapper {
-	display
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.profile-image-wrapper img {
+	width: 100%;
+}
+.profile-content-wrapper {
+	padding: 30px;
+}
+.profile-content-wrapper h1 {
+	color: lightseagreen;
 }
