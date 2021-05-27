@@ -22,15 +22,7 @@
 		
 		</div>
 		<div class="content-wrapper">
-			<div class="two-column-wrapper">
-				<div class="profile-image-wrapper">
-					<img src="signature.png">
-				</div>
-				<div class="profile-content-wrapper">
-					<h1>Hi, thanks of coming</h1>
-					<p>nidavnfvavnvckmsdcvcamsk</p>
-				</div>
-			</div>
+
 				<div class="portfolio-items-wrapper">
 					<!-- replicate these!-->
 					<div class="portfolio-item-wrapper">
@@ -67,10 +59,13 @@
 	
 </body>
 <script>
-	const porftolioItems = document.querySelectorAll('.portfolio-item-wrapper')
-	porftolioItems.forEach(porftolioItem => {
-		porftolioItem.addEventListener('mouseover', () => {
-			porftolioItem.childNodes[1].classList.add('img-darken');
+	const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+	portfolioItems.forEach(portfolioItem => {
+		portfolioItem.addEventListener('mouseover', () => {
+			portfolioItem.childNodes[1].classList.add('img-darken');
+		})
+		portfolioItem.addEventListener('mouseout', () => {
+			portfolioItem.childNodes[1].classList.remove('img-darken');
 		})
 	})
 </script>
