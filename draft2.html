@@ -59,5 +59,10 @@
 </body>
 <script>
 	const porftolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+	porftolioItems.forEach(porftolioItem => {
+		porftolioItem.addEventListener('mouseover', () => {
+			porftolioItem.childNodes[1].classList.add('img-darken');
+		})
+	})
 </script>
 </html>
