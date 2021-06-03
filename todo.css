@@ -51,7 +51,7 @@ label, .myinput{
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-:: placeholder {
+::placeholder {
   color: white;
   opacity: 1;
 }
