@@ -55,6 +55,15 @@ label, .myinput{
   color: white;
   opacity: 1;
 }
+.hover {
+  transition: transform 300ms ease-in-out;
+  transition: 600ms ease-in-out;
+}
+.hover:hover {
+  background: rgba(51,51,51,0.8);
+  transform: scale(1.1, 1.1);
+  border: 2px #eee solid;
+}
 label h2 span{
   display: block;
   font-size: 12px;
