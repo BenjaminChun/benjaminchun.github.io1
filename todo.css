@@ -31,7 +31,7 @@ h1{
 input[type=checkbox] {
   display: none;
 }
-label{
+label, .myinput{
   background: #ae5f75;
   height: 69px;
   width: 100%;
@@ -50,6 +50,10 @@ label{
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+}
+:: placeholder {
+  color: white;
+  opacity: 1;
 }
 label h2 span{
   display: block;
