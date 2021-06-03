@@ -1,121 +1,95 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat)
-$offwhite: darken(white, 10%)
-$darkblue: rgb(50,50,60)
-
-*, *::after, *::before
-  box-sizing: border-box
-
-body
-  background-color: $darkblue
-
-.container
-  display: flex
-  flex-direction: column
-  justify-content: center
-  height: 100vh
-  width: 100vw
-  text-align: center
-
-button
-  font-family: 'Montserrat', sans-serif
-  text-transform: uppercase
-  
-button
-  position: relative
-  border: none
-  font-size: 18px
-  transition: color 0.5s, transform 0.2s, background-color 0.2s
-  outline: none
-  border-radius: 3px
-  margin: 0 10px
-  padding: 23px 33px
-  border: 3px solid transparent
-  
-  &:active
-    transform: translateY(3px)
-  
-  &::after, &::before
-    border-radius: 3px
-  
-.shrink-border
-  background-color: transparent
-  color: darken($darkblue, 10%)
-  
-  &:hover
-    background-color: transparent
-    box-shadow: none
-    color: $offwhite
-  
-  &::before
-    content: ""
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    border: 3px solid darken($darkblue, 10%)
-    transition: opacity 0.3s, border 0.3s
-
-  &:hover::before
-    opacity: 0
-  
-  &::after
-    content: ""
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    background-color: transparent
-    border: 3px solid $offwhite
-    opacity: 0
-    z-index: -1
-    transform: scaleX(1.1) scaleY(1.3)
-    transition: transform 0.3s, opacity 0.3s
-  
-  &:hover::after
-    opacity: 1
-    transform: scaleX(1) scaleY(1)
- 
-.material-bubble
-  background-color: transparent
-  color: darken($darkblue, 10%)
-  border: none
-  overflow: hidden
-  box-shadow: none
-  
-  &:hover
-    color: $offwhite
-  
-  &::before
-    content: ""
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    border: 3px solid darken($darkblue, 10%)
-    transition: opacity 0.3s, border 0.3s
-
-  &:hover::before
-    opacity: 0
-  
-  &::after
-    content: ""
-    position: absolute
-    top: 0
-    left: 0
-    width: 200px
-    height: 200px
-    background-color: lighten($darkblue, 10%)
-    border-color: transparent
-    border-radius: 50%
-    transform: translate(-10px, -70px) scale(0.1)
-    opacity: 0
-    z-index: -1
-    transition: transform 0.3s, opacity 0.3s, background-color 0.3s
-  
-  &:hover::after
-    opacity: 1
-    transform-origin: 100px 100px
-    transform: scale(1) translate(-10px, -70px)
+/* tiny reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+/* body */
+body{
+  background: #4d244e;
+  font-family: sans-serif;
+  border-top: 5px solid #aa8e8d;
+}
+/* title */
+h1{
+  color: #aa8e8d;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+}
+/* tasks */
+.tasks{
+  width: 300px;
+  height: 405px;
+  position: absolute;
+  top: 20%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+}
+input[type=checkbox] {
+  display: none;
+}
+label{
+  background: #ae5f75;
+  height: 69px;
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #2C3E50;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-indent: 20px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  position: relative;
+  padding: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+label h2 span{
+  display: block;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: normal;
+  color: #fff;
+}
+label:before{
+  content:"";
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  right: 20px;
+  top: 30%;
+  transition: border 0.7s ease
+}
+#label-1:checked ~ label[for=label-1],
+#label-2:checked ~ label[for=label-2],
+#label-3:checked ~ label[for=label-3],
+#label-4:checked ~ label[for=label-4],
+#label-5:checked ~ label[for=label-5]{
+  background: #6d335c;
+  border-bottom: 1px solid #34495E;
+  color: #d37b79;
+}
+#label-1:checked ~ label[for=label-1] h2 span,
+#label-2:checked ~ label[for=label-2] h2 span,
+#label-3:checked ~ label[for=label-3] h2 span,
+#label-4:checked ~ label[for=label-4] h2 span,
+#label-5:checked ~ label[for=label-5] h2 span{
+  color: #f6bd66;
+}
+#label-1:checked ~ label[for=label-1]:before,
+#label-2:checked ~ label[for=label-2]:before,
+#label-3:checked ~ label[for=label-3]:before,
+#label-4:checked ~ label[for=label-4]:before,
+#label-5:checked ~ label[for=label-5]:before{
+  background: url("https://i.imgur.com/eoPQ05r.png") no-repeat center center;
+}
