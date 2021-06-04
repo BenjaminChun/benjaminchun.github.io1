@@ -71,8 +71,9 @@ label, .myinput{
 }
 button {
   background: #ae5f75;
+  font-size: 20;
   font-weight: 900;
-  border-color: white;
+  border-color: ;
   cursor: pointer
 }
 button:hover {
