@@ -1,5 +1,7 @@
 body {
-  background-image: background-img.jpg
+  background-image: url("background-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .navbar {
 
