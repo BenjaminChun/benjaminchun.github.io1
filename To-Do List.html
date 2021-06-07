@@ -12,11 +12,18 @@
     <input type="text" id="newtask" placeholder="Lets start off easy...">
     <button class="add" onclick="newElement()">+</button>
   </div>
-  <div class="tasklist">
-
+  <div class="tasklist" id="addnewtask">
   </div>
 </body>
 <script type="text/javascript">
+  // Add a "checked" symbol when clicking on a list item
+  var list = document.querySelector('ul');
+  list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+    }
+  }, false);
+  //Add new element
   function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("newtask").value;
@@ -25,9 +32,9 @@
   if (inputValue === '') {
     alert("You must write something!");
   } else {
-    document.getElementById("myUL").appendChild(li);
+    document.getElementById("addnewtask").appendChild(li);
   }
-  document.getElementById("myInput").value = "";
+  document.getElementById("newtask").value = "";
 
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
