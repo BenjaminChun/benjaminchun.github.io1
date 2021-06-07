@@ -50,7 +50,7 @@ input[type="text"]
 {
     font-family: myThirdFont;
 }
-.tasklist {
+.tasklistcontainer {
   position: fixed;
   background-color: black;
   top: 50%;
@@ -63,4 +63,8 @@ input[type="text"]
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease;
+}
+.todolist {
+  min-width: 40%;
+  list-style: none;
 }
