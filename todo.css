@@ -2,6 +2,14 @@
   font-family: myFirstFont;
   src: url(LobsterTwo-BoldItalic.ttf);
 }
+@font-face {
+  font-family: mySecondFont;
+  src: url(LobsterTwo-Italic.ttf);
+}
+@font-face {
+  font-family: myThirdFont;
+  src: url(LobsterTwo-Regular.ttf);
+}
 body {
   background-image: url("background-pc.jpg");
   background-size: cover;
@@ -26,4 +34,18 @@ h1 {
   top: 20%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+.myinput {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 
+}
+::placeholder {
+  font-family: mySecondFont;
+}
+input[type="text"]
+{
+    font-family: myThirdFont;
 }
