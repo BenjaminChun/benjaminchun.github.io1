@@ -1,6 +1,7 @@
 body {
   background-image: url("background-pc.jpg");
   background-size: cover;
+  color: white;
 }
 .navbar {
 
