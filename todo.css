@@ -1,7 +1,12 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(LobsterTwo-BoldItalic.ttf);
+}
 body {
   background-image: url("background-pc.jpg");
   background-size: cover;
   color: white;
+  font-family: myFirstFont;
 }
 .navbar {
     color: white;
@@ -14,6 +19,7 @@ body {
     top: 0;
     position: fixed;
     left: 0;
+    padding-top: 5px;
 }
 h1 {
   position: fixed;
