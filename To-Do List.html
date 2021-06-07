@@ -12,9 +12,14 @@
     <input type="text" id="newtask" placeholder="Lets start off easy...">
     <button class="add" onclick="newElement()">+</button>
   </div>
-  <div class="tasklist" id="addnewtask">
+  <div class="tasklistcontainer" id="addnewtask">
+    <div class="todolist"></div>
   </div>
+
+
+
 </body>
+
 <script type="text/javascript">
   // Add a "checked" symbol when clicking on a list item
   var list = document.querySelector('ul');
@@ -23,6 +28,7 @@
     ev.target.classList.toggle('checked');
     }
   }, false);
+
   //Add new element
   function newElement() {
   var li = document.createElement("li");
@@ -50,4 +56,5 @@
   }
 }
 </script>
+
 </html>
