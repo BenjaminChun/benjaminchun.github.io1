@@ -13,9 +13,9 @@
     <button class="add">+</button>
   </div>
   <div class="tasklistcontainer" id="addnewtask">
-    <div class="todolist" id="list">
+    <ul class="todolist" id="list">
       
-    </div>
+    </ul>
   </div>
 
 
@@ -45,6 +45,7 @@
     if(todoInput.value === ""){
         return null
     }
+
     //check mark BUTTON
     const completedButton = document.createElement('button');
     completedButton.innerHTML = '<i class="fas fa-check"></i>';
