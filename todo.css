@@ -36,37 +36,51 @@ h1 {
   transform: translate(-50%,-50%);
 }
 .myinput {
+  display: flex;
   position: fixed;
   top: 30%;
   left: 50%;
   transform: translate(-50%,-50%);
-  font-size: 
 }
-
 ::placeholder {
   font-family: mySecondFont;
+  font-size: 20px;
 }
 input[type="text"]
 {
     font-family: myThirdFont;
+    font-size: 20px;
+    border-radius: 25px;
+}
+.add {
+
 }
 .tasklistcontainer {
   position: fixed;
-  background-color: black;
   top: 50%;
-  left: 50%;
-  width: 50%;
-  height: 30%;
+  left: 48%;
   transform: translate(-50%,-50%);
-  opacity: 0.8;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s ease;
 }
 .todolist {
   min-width: 40%;
   list-style: none;
+}
+.todo {
+  margin: 5px auto;
+  background: black;
+  color: orange;
+  display: flex;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.todo li {
+  flex: 1;
 }
 .complete_btn, .delete_btn{
     padding: 0.5rem;
